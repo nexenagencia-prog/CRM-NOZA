@@ -77,7 +77,7 @@ function financeView(){
   <div class="finance-page">
     <div class="finance-controls"><div><label for="financeMonth">Escolha o mês</label><small>O seletor inclui até 12 meses futuros.</small></div><select class="month-select" id="financeMonth">${monthOptions(m)}</select></div>
     <div class="grid metrics finance-metrics">
-      <article class="card"><div class="metric-top"><span>Vai entrar</span><span class="metric-symbol">＋</span></div><div class="metric-value">${money(f.forecast)}</div><div class="metric-foot">Receitas recebidas e previstas</div></article>
+      <article class="card"><div class="metric-top"><span>Vai entrar</span><span class="metric-symbol">＋</span></div><div class="metric-value">${money(f.forecast+plannedReturn)}</div><div class="metric-foot">${money(f.forecast)} em receitas + ${money(plannedReturn)} de retorno estimado</div></article>
       <article class="card"><div class="metric-top"><span>Vai sair</span><span class="metric-symbol">−</span></div><div class="metric-value">${money(outgoing)}</div><div class="metric-foot">Custos + ${money(plannedTotal)} em investimentos</div></article>
       <article class="card finance-result-card"><div class="metric-top"><span>Saldo estimado</span><span class="metric-symbol">＝</span></div><div class="metric-value ${projected<0?'negative':'positive'}">${money(projected)}</div><div class="metric-foot">O que sobra após entradas e saídas</div></article>
     </div>
