@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101114" />
+  <title>NOZA Control — Gestão do negócio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">N</div><div><b>NOZA</b><span>CONTROL CENTER</span></div></div>
+      <div class="workspace-label">GESTÃO DA NOZA</div>
+      <nav class="nav-list" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">◫</span>Visão geral</button>
+        <button class="nav-item" data-view="tasks"><span class="nav-icon">☷</span>Projetos e tarefas <i id="taskNavCount"></i></button>
+        <button class="nav-item" data-view="people"><span class="nav-icon">◉</span>Equipe e suporte</button>
+        <button class="nav-item" data-view="crm"><span class="nav-icon">◎</span>Contatos e oportunidades</button>
+        <button class="nav-item" data-view="marketing"><span class="nav-icon">↗</span>Marketing e tráfego</button>
+        <button class="nav-item" data-view="content"><span class="nav-icon">▦</span>Conteúdo e feed</button>
+        <button class="nav-item" data-view="finance"><span class="nav-icon">▤</span>Financeiro e metas</button>
+        <button class="nav-item" data-view="tools"><span class="nav-icon">⌘</span>IA e plataformas</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="local-card"><span class="local-dot"></span><div><b>Espaço de trabalho</b><small>Dados salvos neste navegador</small></div></div>
+        <button class="nav-item" id="exportBtn"><span class="nav-icon">⇩</span>Exportar dados</button>
+        <button class="nav-item" id="importBtn"><span class="nav-icon">⇧</span>Importar backup</button>
+        <input type="file" id="importFile" accept="application/json" hidden />
+        <div class="sidebar-version">NOZA CONTROL <span>v0.1</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu">☰</button>
+        <div class="crumb"><span>NOZA</span><b>/</b><strong id="currentSection">Visão geral</strong></div>
+        <div class="top-actions"><span class="today" id="todayLabel"></span><button class="avatar" title="Sandro Bello">SB</button></div>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><span class="eyebrow" id="modalEyebrow">NOVO REGISTRO</span><h2 id="modalTitle">Adicionar</h2></div><button class="icon-button" id="closeModal" aria-label="Fechar">×</button></div><form id="recordForm"><div class="form-grid" id="formFields"></div><div class="modal-footer"><button type="button" class="button secondary" id="cancelModal">Cancelar</button><button class="button primary" type="submit">Salvar registro <span>→</span></button></div></form></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
