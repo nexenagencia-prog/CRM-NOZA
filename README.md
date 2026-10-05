@@ -9,8 +9,10 @@ Abra `index.html` no navegador ou publique os três arquivos (`index.html`, `sty
 ## O que já funciona
 
 - Cadastros, edição e exclusão de tarefas, equipe, chamados, contatos, campanhas, despesas/assinaturas e metas mensais.
-- Indicadores de faturamento previsto e realizado, metas, tráfego e custos cadastrados.
+- Visão geral com pendências de tarefas, chamados fora do prazo, contatos a retomar e renovações próximas.
+- Indicadores de faturamento previsto e realizado, metas, tráfego e custos cadastrados; filtros mensais atualizam os números e campanhas exibidos.
 - Registro de funções de suporte e SDRs, responsáveis e custos mensais da equipe.
+- Prazo de resposta por chamado, com contagem de atrasados e chamados sem atendente.
 - Cadastro de serviços de IA e plataformas, com plano/modelo, fornecedor, frequência, renovação e responsável.
 - Planejador de conteúdo: upload e redução das imagens, grade de nove posições, ordenação por arrastar e alternância entre prévia de celular e desktop.
 - Exportação e importação de backup em JSON.
