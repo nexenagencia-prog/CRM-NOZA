@@ -12,7 +12,7 @@ Abra `index.html` no navegador ou publique os três arquivos (`index.html`, `sty
 - Visão geral com pendências de tarefas, chamados fora do prazo, contatos a retomar e renovações próximas.
 - Interface com tipografia ampliada, marca NOZA no cabeçalho, contatos em cartões de leitura rápida e financeiro com painéis claros.
 - Planilha financeira por mês, com seleção dos últimos meses e planejamento para até 12 meses à frente.
-- Receitas, custos adicionais e investimentos têm cadastro, edição e exclusão; entradas, saídas e saldo estimado são calculados automaticamente e apresentados em três indicadores simples.
+- Receitas, custos adicionais e investimentos têm cadastro, edição e exclusão; entradas e custos aparecem em uma lista individual e editável, com totais e saldo estimado em três indicadores simples.
 - Metas mensais editáveis; composição dos custos fica disponível em uma seção recolhida para manter o resumo simples.
 - Custos recorrentes, tráfego e equipe entram no resumo sem precisar redigitar; metas mensais continuam editáveis.
 - Registro de funções de suporte e SDRs, responsáveis e custos mensais da equipe.
