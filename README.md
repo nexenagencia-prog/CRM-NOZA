@@ -10,9 +10,10 @@ Abra `index.html` no navegador ou publique os três arquivos (`index.html`, `sty
 
 - Cadastros, edição e exclusão de tarefas, equipe, chamados, contatos, campanhas, despesas/assinaturas e metas mensais.
 - Visão geral com pendências de tarefas, chamados fora do prazo, contatos a retomar e renovações próximas.
-- Interface com tipografia ampliada e cartões de serviços; contatos em cartões de leitura rápida; metas e faturamento organizados em blocos mensais com contraste claro.
-- Planilha financeira por mês com lançamentos de receitas, custos e investimentos; totais, saldo projetado e retorno esperado calculados automaticamente.
-- Lançamentos têm situação adaptada ao tipo, período selecionável e valor previsto ou realizado.
+- Interface com tipografia ampliada e cartões de serviços; contatos em cartões de leitura rápida; financeiro com painéis claros e leitura resumida.
+- Planilha financeira por mês, com seleção dos últimos meses e planejamento para até 12 meses à frente.
+- Receitas, custos adicionais e investimentos têm cadastro, edição e exclusão; o faturamento previsto, custos, retorno esperado e saldo projetado são calculados automaticamente.
+- Metas mensais editáveis; composição dos custos fica disponível em uma seção recolhida para manter o resumo simples.
 - Custos recorrentes, tráfego e equipe entram no resumo sem precisar redigitar; metas mensais continuam editáveis.
 - Registro de funções de suporte e SDRs, responsáveis e custos mensais da equipe.
 - Prazo de resposta por chamado, com contagem de atrasados e chamados sem atendente.
