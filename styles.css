@@ -147,6 +147,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .ai-cost-note b,.ai-cost-note span{font-size:8px}
 @media(max-height:850px) and (min-width:701px){.content{padding-top:20px}.page-head{margin-bottom:14px}.ai-cost-planner{padding:12px}.ai-cost-heading{margin-bottom:8px}.ai-cost-assumptions{padding:7px;margin-bottom:8px}.ai-cost-row{padding-top:6px;padding-bottom:6px}.ai-cost-service-guide{margin-top:6px}.ai-cost-note{margin-top:5px;padding-top:5px;padding-bottom:5px}}
 @media(max-width:700px){.ai-cost-planner{padding:11px}.ai-cost-heading{margin-bottom:8px}.ai-cost-assumptions{margin-bottom:8px}.ai-cost-columns{gap:8px}.ai-cost-service-guide{grid-template-columns:repeat(3,minmax(0,1fr))}.ai-cost-service-guide>div{display:grid;gap:4px}.ai-cost-service-guide small{font-size:7px}}
+/* Put row-level price controls beside their short labels to reduce the card's height. */
+.ai-cost-table-head,.ai-cost-row{grid-template-columns:minmax(0,1fr) 178px}
+.ai-cost-row{padding:6px 11px}
+.ai-cost-estimate>.ai-cost-field{display:flex;align-items:center;justify-content:flex-end;gap:5px;width:auto;text-align:right}
+.ai-cost-estimate>.ai-cost-field>span{font-size:8px;line-height:1.1;white-space:nowrap}
+.ai-cost-estimate>.ai-cost-field input{width:72px;height:22px;padding:3px 6px;font-size:9px}
+.ai-cost-subvalue{font-size:8px;line-height:1.15}
+.ai-cost-inline-fields .ai-cost-field>span{font-size:8px;line-height:1.05;white-space:nowrap}
+.ai-cost-inline-fields .ai-cost-field input{height:21px;padding:3px 5px;font-size:9px}
+@media(max-width:1050px){.ai-cost-table-head,.ai-cost-row{grid-template-columns:minmax(0,1fr) 164px}}
+@media(max-width:700px){.ai-cost-table-head,.ai-cost-row{grid-template-columns:minmax(0,1fr) 132px;padding:6px 8px}.ai-cost-estimate>.ai-cost-field{gap:3px}.ai-cost-estimate>.ai-cost-field>span{font-size:7px}.ai-cost-estimate>.ai-cost-field input{width:59px;height:21px}.ai-cost-inline-fields .ai-cost-field>span{white-space:normal}.ai-cost-inline-fields .ai-cost-field input{height:20px}}
 
 /* Finance: calm worksheet surface, with the essential figures visible first. */
 .finance-page{display:grid;gap:14px;padding:16px;background:#e8e9ec;border:1px solid #f6f6f7;border-radius:17px;color:#202126;box-shadow:0 8px 28px #0002}
