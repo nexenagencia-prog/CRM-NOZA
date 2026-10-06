@@ -263,3 +263,24 @@ body{background:#0a0b0c;color:#f4f4f3}
 .ai-cost-note span{color:#9c9da0}
 .ai-cost-live{background:#1a1b1d;border-color:#3c3d40;color:#d5d6d7}
 @media(max-width:700px){.content:before{inset:60px 0 0}.page-head h1{font-size:27px}.metrics>.card .metric-value,.mini-cards>.card .value{font-size:24px}.ai-cost-planner{border-radius:16px}.ai-cost-total-brl{font-size:36px}}
+
+/* Clear project-vs-subscriber cost comparison */
+.ai-cost-usage-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 12px}
+.ai-cost-usage-summary>div{display:grid;gap:3px;padding:10px 12px;border:1px solid #dcdee2;border-radius:10px;background:#f5f6f7}
+.ai-cost-usage-summary b{color:#292a30;font:650 14px 'Manrope',sans-serif}
+.ai-cost-usage-summary span{color:#73757c;font-size:9px;line-height:1.4}
+.ai-cost-table-head{grid-template-columns:minmax(0,1fr) 150px 150px}
+.ai-cost-row{grid-template-columns:minmax(0,1fr) 310px}
+.ai-cost-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;align-items:center;min-width:0}
+.ai-cost-values>div{display:grid;gap:3px;justify-items:end;min-width:0}
+.ai-cost-values strong{color:#24252b;font-size:12px;font-weight:650;white-space:nowrap}
+.ai-cost-values small{color:#777981;font-size:8px;text-align:right;white-space:nowrap}
+.ai-cost-values>.ai-cost-field,.ai-cost-values>.ai-cost-inline-fields,.ai-cost-values>.ai-cost-detail-line{grid-column:1/-1}
+.ai-cost-values .ai-cost-field{width:100%;text-align:right}
+.ai-cost-values .ai-cost-inline-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+.ai-cost-values .ai-cost-inline-fields .ai-cost-field{width:100%;text-align:right}
+.ai-cost-values .ai-cost-detail-line{color:#777981;font-size:8px;line-height:1.35;text-align:right}
+.ai-cost-service .ai-cost-detail-line{margin-top:3px;color:#777981;font-size:8px;line-height:1.35}
+.ai-cost-estimate{display:none}
+@media(max-width:900px){.ai-cost-table-head{grid-template-columns:minmax(0,1fr) 125px 125px}.ai-cost-row{grid-template-columns:minmax(0,1fr) 260px}}
+@media(max-width:700px){.ai-cost-usage-summary{grid-template-columns:1fr}.ai-cost-table-head{grid-template-columns:minmax(0,1fr) 104px 104px;gap:4px;padding:8px;font-size:8px}.ai-cost-row{grid-template-columns:minmax(0,1fr) 216px;gap:6px;padding:9px}.ai-cost-values{gap:3px}.ai-cost-values strong{font-size:10px}.ai-cost-values small{font-size:7px}.ai-cost-inline-fields{grid-template-columns:1fr!important}}
