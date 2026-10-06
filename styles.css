@@ -215,3 +215,51 @@ body{background:#0a0b0c;color:#f4f4f3}
 .ai-cost-live{background:#f8f8f9;color:#55565a}
 .contact-row{box-shadow:0 10px 28px #0003}
 @media(max-width:700px){.app-shell{background:linear-gradient(160deg,#0b0c0d,#101112 60%,#0a0b0c)}.metrics>.card,.mini-cards>.card{border-radius:15px}}
+
+/* Refinement pass: retain the dark gallery canvas and reserve silver for key figures. */
+.app-shell{background:radial-gradient(ellipse at 72% 10%,#c6c8cc0b 0,transparent 34%),radial-gradient(ellipse at 48% 48%,#ffffff05 0,transparent 48%),linear-gradient(120deg,#090a0b,#0e0f10 55%,#090a0b)}
+.content{isolation:isolate}
+.content:before{content:"";position:fixed;inset:68px 0 0 252px;z-index:-1;pointer-events:none;opacity:.22;background:linear-gradient(90deg,transparent calc(50% - .5px),#ffffff0b 50%,transparent calc(50% + .5px)),linear-gradient(180deg,transparent 0 31%,#ffffff08 31.1%,transparent 31.2%)}
+.page-head h1{font-size:clamp(28px,3.1vw,36px);font-weight:550;color:#f0f0ef;letter-spacing:-.055em}
+.section-title h2,.panel-head h2{font-weight:550;color:#ececed}
+.metrics>.card,.mini-cards>.card{position:relative;overflow:hidden;background:linear-gradient(145deg,#202123 0%,#141516 72%);border:1px solid #36373a;border-radius:17px;color:#f3f3f2;box-shadow:0 10px 30px #0005,inset 0 1px #ffffff12}
+.metrics>.card:before,.mini-cards>.card:before{content:"";position:absolute;inset:0 0 auto;height:1px;background:linear-gradient(90deg,transparent,#ffffff55 48%,transparent);opacity:.65}
+.metrics>.card:hover,.mini-cards>.card:hover{transform:translateY(-2px);border-color:#56575a;background:linear-gradient(145deg,#252628,#171819);box-shadow:0 16px 36px #0006,inset 0 1px #ffffff19}
+.metrics>.card .metric-top,.mini-cards>.card .metric-top,.mini-cards>.card .label{color:#a6a7aa;font-size:11px;font-weight:500}
+.metrics>.card .metric-symbol,.mini-cards>.card .metric-symbol{width:29px;height:29px;background:linear-gradient(145deg,#303134,#18191b);color:#e0e1e2;border:1px solid #414246;border-radius:9px;box-shadow:0 4px 12px #0004,inset 0 1px #ffffff18}
+.metrics>.card .metric-value,.mini-cards>.card .value{color:#f4f4f3;font-size:29px;font-weight:650;letter-spacing:-.06em}
+.metrics>.card .metric-foot,.mini-cards>.card .metric-foot{color:#96979b;font-size:10px}
+.metrics>.card .metric-foot strong{color:#d3d4d5}
+.panel,.finance-history{background:linear-gradient(145deg,#191a1b,#111213);border-color:#303133;box-shadow:0 15px 38px #0004}
+.ai-cost-planner{position:relative;overflow:hidden;background:radial-gradient(ellipse at 15% 0%,#ffffff11,transparent 38%),linear-gradient(145deg,#202123,#141516 72%);border:1px solid #38393c;border-radius:20px;color:#f1f1f0;box-shadow:0 18px 45px #0006,inset 0 1px #ffffff14}
+.ai-cost-heading h2{color:#f2f2f1;font-size:clamp(24px,2vw,30px);font-weight:550;letter-spacing:-.05em}
+.ai-cost-heading p{color:#a7a8ab}
+.ai-cost-heading .eyebrow{color:#aeb0b3}
+.ai-cost-assumptions{background:#101112a8;border:1px solid #343538;border-radius:14px}
+.ai-cost-field>span{color:#b2b3b6}
+.ai-cost-breakdown{border-color:#f7f7f8;border-radius:15px;box-shadow:0 8px 22px #0002}
+.ai-cost-row{background:linear-gradient(110deg,#fff,#f7f7f8)}
+.ai-cost-service b{font-size:15px;font-weight:650;letter-spacing:-.025em;color:#202124}
+.ai-cost-service>span{font-size:10px;color:#77797e}
+.ai-cost-estimate>strong{font-size:18px;font-weight:700;color:#18191b;letter-spacing:-.035em}
+.ai-cost-subvalue{font-size:9px;color:#74767a}
+.ai-cost-estimate>.ai-cost-field>span,.ai-cost-inline-fields .ai-cost-field>span{font-size:9px;color:#686a6e}
+.ai-cost-total-card{position:relative;overflow:hidden;background:radial-gradient(ellipse at 20% 0%,#fff 0,#f4f4f5 40%,#d1d2d5 100%);border:1px solid #fff;border-radius:17px;box-shadow:0 14px 28px #0003,inset 0 1px #fff}
+.ai-cost-total-card:before{content:"";position:absolute;inset:0 0 auto;height:40%;background:linear-gradient(180deg,#ffffff88,transparent);pointer-events:none}
+.ai-cost-total-card .eyebrow{color:#77797d;letter-spacing:.16em}
+.ai-cost-total-card h3{font-size:15px;font-weight:550;color:#45464a}
+.ai-cost-total-brl{font-size:40px;font-weight:700;color:#131416;letter-spacing:-.065em}
+.ai-cost-total-usd{font-size:11px;color:#66686d}
+.ai-cost-total-card>div span{font-size:10px;color:#65676b}
+.ai-cost-total-card>div b{font-size:11px;color:#242528}
+.ai-cost-total-divider{background:#191a1d1f}
+.ai-cost-total-card>p{font-size:9px;color:#717378}
+.ai-cost-service-guide>div{background:linear-gradient(145deg,#1d1e20,#141516);border-color:#333437;border-radius:12px;box-shadow:inset 0 1px #ffffff0c}
+.ai-cost-service-guide b{color:#edeeee;font-size:10px}
+.ai-cost-service-guide small{color:#a1a2a6;font-size:8px}
+.ai-guide-icon{background:linear-gradient(145deg,#36373a,#202123);border:1px solid #4a4b4e;color:#e9e9e9;box-shadow:0 4px 12px #0004,inset 0 1px #ffffff19}
+.ai-cost-note{background:#111213;border-color:#8f9093}
+.ai-cost-note b{color:#dcddde}
+.ai-cost-note span{color:#9c9da0}
+.ai-cost-live{background:#1a1b1d;border-color:#3c3d40;color:#d5d6d7}
+@media(max-width:700px){.content:before{inset:60px 0 0}.page-head h1{font-size:27px}.metrics>.card .metric-value,.mini-cards>.card .value{font-size:24px}.ai-cost-planner{border-radius:16px}.ai-cost-total-brl{font-size:36px}}
