@@ -52,6 +52,49 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 @media(max-width:900px){.cost-breakdown{grid-template-columns:repeat(2,minmax(0,1fr))}.investment-row{grid-template-columns:minmax(170px,1fr) auto minmax(130px,1fr)}.investment-row>span:nth-of-type(2){grid-column:2}.investment-row .entry-actions{grid-column:3;justify-content:flex-end}}
 @media(max-width:700px){.finance-controls{align-items:flex-start;flex-wrap:wrap}.finance-controls>span{width:100%;margin-left:0}.finance-controls select{flex:1}.finance-action-bar{display:grid;grid-template-columns:1fr}.finance-highlight{padding:15px}.finance-highlight-head h2{font-size:16px}.finance-highlight-numbers{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.finance-highlight-numbers b{font-size:17px}.cost-breakdown{grid-template-columns:1fr 1fr;padding:10px}.investment-row{grid-template-columns:1fr 1fr;gap:8px}.investment-row>div:first-child{grid-column:1/-1}.investment-row>span:nth-of-type(2){grid-column:auto}.investment-row .entry-actions{grid-column:1/-1;justify-content:flex-end;border-top:1px solid #cfd0d5;padding-top:7px}.finance-hint{margin:0 10px 12px}}
 
+/* Cost planner: stronger type hierarchy and more room for the monthly project total. */
+.ai-cost-heading h2{font-size:clamp(23px,2vw,28px);letter-spacing:-.035em}
+.ai-cost-heading p{font-size:12px}
+.ai-cost-columns{grid-template-columns:minmax(0,1fr) 305px;gap:14px}
+.ai-cost-table-head,.ai-cost-row{grid-template-columns:minmax(0,1fr) 158px}
+.ai-cost-service b{font-size:15px;letter-spacing:-.015em}
+.ai-cost-service>span{font-size:10px}
+.ai-cost-estimate>strong{font-size:17px}
+.ai-cost-subvalue{font-size:9px;line-height:1.35}
+.ai-cost-estimate .ai-cost-field>span,.ai-cost-inline-fields .ai-cost-field>span{font-size:9px}
+.ai-cost-total-card{padding:17px}
+.ai-cost-total-card .eyebrow{font-size:9px}
+.ai-cost-total-card h3{font-size:14px}
+.ai-cost-total-brl{font-size:34px}
+.ai-cost-total-usd{font-size:12px}
+.ai-cost-total-card>div span{font-size:10px}
+.ai-cost-total-card>div b{font-size:11px}
+.ai-cost-project-usd{align-self:flex-end;margin-top:-3px;color:#a8aab0;font-size:10px}
+.ai-cost-total-card>p{font-size:9px}
+@media(max-width:1050px){.ai-cost-columns{grid-template-columns:minmax(0,1fr) 285px}.ai-cost-table-head,.ai-cost-row{grid-template-columns:minmax(0,1fr) 145px}}
+@media(max-width:900px){.ai-cost-columns{grid-template-columns:minmax(0,1fr) 270px}}
+@media(max-width:700px){.ai-cost-heading h2{font-size:22px}.ai-cost-columns{grid-template-columns:1fr}.ai-cost-table-head,.ai-cost-row{grid-template-columns:minmax(0,1fr) 126px}.ai-cost-service b{font-size:13px}.ai-cost-service>span{font-size:9px}.ai-cost-estimate>strong{font-size:15px}.ai-cost-total-card{min-height:215px}.ai-cost-total-brl{font-size:32px}}
+
+/* Contacts: calm graphite cards, readable status chips and less visual clutter. */
+.contact-list{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:11px}
+.contact-row{grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:16px;background:#50535a;border:1px solid #666970;border-radius:15px;color:#f7f7f8;box-shadow:0 8px 22px #0002;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.contact-row:hover{transform:translateY(-2px);border-color:#81848b;box-shadow:0 12px 26px #0003}
+.contact-row-person{gap:13px}
+.contact-avatar{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:13px;background:#70737a!important;color:#fff;border:1px solid #898c92;font-size:16px;font-weight:650}
+.contact-identity-copy{min-width:0;padding-top:4px}
+.contact-row-person h3{margin:0 0 7px;color:#fff;font-size:16px;font-weight:650;letter-spacing:-.02em}
+.contact-row-tags{gap:6px}
+.contact-row .badge{border:1px solid #85888f;background:#65686f;color:#fff;font-size:10px;font-weight:600;border-radius:99px;padding:4px 9px}
+.contact-row .badge.green{background:#345b48;border-color:#527964;color:#effff4}
+.contact-row .badge.blue{background:#3a526e;border-color:#5a7492;color:#f1f7ff}
+.contact-row .badge.amber{background:#695839;border-color:#927b52;color:#fff8e9}
+.contact-row .badge.red{background:#713f42;border-color:#965e61;color:#fff1f1}
+.contact-row-actions{align-self:center;gap:5px}
+.contact-row .text-button{color:#e4e5e7;font-size:11px}
+.contact-row .text-button:hover{color:#fff}
+@media(max-width:1050px){.contact-row{grid-template-columns:minmax(0,1fr) auto;gap:10px}.contact-row-actions{grid-column:auto;grid-row:auto}}
+@media(max-width:700px){.contact-list{grid-template-columns:1fr}.contact-row{grid-template-columns:minmax(0,1fr) auto;padding:14px}.contact-row-actions{border:0;padding:0;justify-content:flex-end}.contact-row-person h3{font-size:15px}}
+
 /* Finance: calm worksheet surface, with the essential figures visible first. */
 .finance-page{display:grid;gap:14px;padding:16px;background:#e8e9ec;border:1px solid #f6f6f7;border-radius:17px;color:#202126;box-shadow:0 8px 28px #0002}
 .finance-page .finance-controls{margin:0;padding:12px 14px;background:#f7f7f8;border:1px solid #dedfe3;border-radius:12px;color:#25262c}
