@@ -178,3 +178,40 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 @media(max-width:700px){.finance-page .finance-metrics{grid-template-columns:1fr 1fr}.finance-page .finance-metrics .card:last-child{grid-column:1/-1}.finance-page .finance-metrics .metric-value{font-size:20px}.finance-page .finance-highlight{grid-template-columns:1fr;gap:12px}.finance-goal-actions{width:100%;grid-template-columns:auto 1fr;align-items:center}.brand .brand-logo{width:118px}}
 .finance-page .finance-controls{align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.finance-period{min-width:215px}.finance-period .month-select{width:100%;margin-top:5px}.finance-period small{display:block;margin-top:5px}.finance-page .finance-controls>.finance-action-bar{display:flex;width:auto;justify-content:flex-end;gap:7px}.finance-page .finance-action-bar .button{padding:8px 11px;min-height:34px}.finance-page .finance-metrics .card{min-height:93px;padding:12px 15px}.finance-page .finance-metrics .metric-value{font-size:22px;margin:9px 0 2px}.finance-page .finance-metrics .metric-foot{font-size:9px;line-height:1.35}.finance-kpi-link{justify-self:start;margin-top:4px;padding:0;border:0;background:transparent;color:#555861;font-size:9px;font-weight:600}.finance-kpi-link:hover{color:#111216;text-decoration:underline}.finance-ledger-section{scroll-margin-top:82px}.finance-ledger-list{display:grid;gap:6px}.finance-ledger-item{display:grid;grid-template-columns:27px minmax(140px,1fr) minmax(75px,auto) auto auto;align-items:center;gap:10px;min-height:51px;padding:7px 10px;background:#f5f6f7;border:1px solid #e7e8eb;border-radius:9px}.finance-ledger-mark{width:23px;height:23px;display:grid;place-items:center;border-radius:7px;background:#e1eee5;color:#3f7551;font-size:14px;font-weight:650}.finance-ledger-item.is-cost .finance-ledger-mark{background:#f3e5e3;color:#9b5148}.finance-ledger-name{display:grid;gap:2px;min-width:0}.finance-ledger-name b{overflow:hidden;color:#27282e;font-size:11px;font-weight:600;text-overflow:ellipsis;white-space:nowrap}.finance-ledger-name small{overflow:hidden;color:#7b7d83;font-size:9px;text-overflow:ellipsis;white-space:nowrap}.finance-ledger-status{padding:4px 7px;border-radius:99px;background:#eceef0;color:#666870;font-size:9px;white-space:nowrap}.finance-ledger-value{color:#3e7650;font-size:12px;font-weight:650;white-space:nowrap}.finance-ledger-item.is-cost .finance-ledger-value{color:#a05249}.finance-ledger-actions{display:flex;gap:7px;white-space:nowrap}.finance-ledger-actions .text-button{padding:4px 2px;font-size:9px}.finance-page .finance-section-title{margin-bottom:9px}.finance-page .finance-section-title h2{font-size:14px}.finance-page .finance-section-title p{font-size:9px}
 @media(max-width:700px){.finance-page .finance-controls{align-items:stretch;gap:11px}.finance-period{min-width:0;width:100%!important}.finance-period .month-select{max-width:none}.finance-page .finance-controls>.finance-action-bar{display:flex;width:100%;justify-content:stretch}.finance-page .finance-action-bar .button{flex:1;padding:8px 5px;font-size:10px}.finance-page .finance-metrics .card{min-height:88px;padding:10px}.finance-page .finance-metrics .metric-top{font-size:10px}.finance-page .finance-metrics .metric-value{font-size:18px}.finance-page .finance-metrics .metric-foot{font-size:8px}.finance-kpi-link{font-size:8px}.finance-ledger-item{grid-template-columns:24px minmax(0,1fr) auto;gap:7px;padding:8px}.finance-ledger-mark{grid-row:1/3}.finance-ledger-name{grid-column:2}.finance-ledger-value{grid-column:3;grid-row:1}.finance-ledger-status{grid-column:2;justify-self:start;grid-row:2}.finance-ledger-actions{grid-column:3;grid-row:2}.finance-ledger-actions .text-button{font-size:8px}.finance-page .finance-section-title h2{font-size:13px}}
+
+/* Graphite + silver visual language drawn from the NOZA reference image. */
+:root{--bg:#0a0b0c;--panel:#151617;--panel2:#1b1c1e;--line:#292a2c;--text:#f4f4f3;--muted:#96979a}
+body{background:#0a0b0c;color:#f4f4f3}
+.app-shell{background:radial-gradient(ellipse at 68% 8%,#ffffff08 0,transparent 38%),linear-gradient(120deg,#0b0c0d,#0d0e10 56%,#090a0b)}
+.sidebar{background:linear-gradient(180deg,#111213,#0e0f10);border-right-color:#242527}
+.topbar{background:#101112d9;border-bottom-color:#242527}
+.content{position:relative}
+.page-head h1{font-weight:650;letter-spacing:-.045em}
+.page-head p{color:#a5a6a9}
+.section-title h2,.panel-head h2{letter-spacing:-.025em}
+.card{border-color:#2b2c2e;background:linear-gradient(145deg,#191a1c,#151617);box-shadow:0 10px 28px #0002}
+.metrics>.card,.mini-cards>.card{background:linear-gradient(145deg,#f1f1f2 0%,#d9dade 100%);border:1px solid #fff;border-radius:18px;color:#202124;box-shadow:0 10px 28px #0003,inset 0 1px #ffffffb8;transition:transform .18s ease,box-shadow .18s ease}
+.metrics>.card:hover,.mini-cards>.card:hover{transform:translateY(-2px);box-shadow:0 15px 32px #0004,inset 0 1px #ffffffc9}
+.metrics>.card .metric-top,.mini-cards>.card .metric-top,.mini-cards>.card .label{color:#626368}
+.metrics>.card .metric-symbol,.mini-cards>.card .metric-symbol{background:#242528;color:#f4f4f4;border-radius:9px;box-shadow:0 3px 9px #0002}
+.metrics>.card .metric-value,.mini-cards>.card .value{color:#191a1d;font-weight:700;letter-spacing:-.055em}
+.metrics>.card .metric-foot,.mini-cards>.card .metric-foot{color:#6c6d71}
+.metrics>.card .metric-foot strong{color:#343539}
+.panel,.finance-history{background:linear-gradient(145deg,#171819,#121314);border-color:#2a2b2d;box-shadow:0 12px 34px #0002}
+.panel-head{border-bottom-color:#2a2b2d}
+.data-table th{border-bottom-color:#292a2c}
+.data-table td{border-bottom-color:#242527}
+.button.secondary,.month-select,.control{background:#18191b;border-color:#333436}
+.nav-item.active{background:linear-gradient(100deg,#ffffff13,#ffffff07);box-shadow:inset 2px 0 #d8d9da}
+.metric-symbol,.nav-icon{color:#d4d5d6}
+.ai-cost-planner{background:linear-gradient(145deg,#f0f0f1,#d9dade);border-color:#fff;border-radius:18px;box-shadow:0 14px 36px #0004,inset 0 1px #ffffffc9}
+.ai-cost-heading h2{color:#191a1c;letter-spacing:-.045em}
+.ai-cost-total-card{background:linear-gradient(145deg,#f8f8f8,#d9dade);border-color:#fff;border-radius:15px;color:#1d1e20;box-shadow:0 7px 18px #0002,inset 0 1px #fff}
+.ai-cost-total-card .eyebrow,.ai-cost-total-card h3,.ai-cost-total-usd,.ai-cost-total-card>div span,.ai-cost-total-card>p{color:#686a6e}
+.ai-cost-total-brl,.ai-cost-total-card>div b{color:#17181a}
+.ai-cost-total-divider{background:#20212420}
+.ai-cost-service-guide>div{border-color:#d7d8db;background:linear-gradient(145deg,#f8f8f9,#e6e7e9);border-radius:11px}
+.ai-guide-icon{background:#242528;color:#f4f4f4;border-radius:8px;box-shadow:0 3px 8px #0002}
+.ai-cost-live{background:#f8f8f9;color:#55565a}
+.contact-row{box-shadow:0 10px 28px #0003}
+@media(max-width:700px){.app-shell{background:linear-gradient(160deg,#0b0c0d,#101112 60%,#0a0b0c)}.metrics>.card,.mini-cards>.card{border-radius:15px}}
